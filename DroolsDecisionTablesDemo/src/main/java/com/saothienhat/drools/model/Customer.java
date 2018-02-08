@@ -1,4 +1,4 @@
-package com.javacodegeeks.drools.model;
+package com.saothienhat.drools.model;
 
 public class Customer {
 	private Cart cart;
@@ -36,9 +36,9 @@ public class Customer {
 	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Customer new? ")
+		sb.append("	Is new Customer: ")
 		   .append(isNew)
-		   .append("\nCoupon: ")
+		   .append("\n	Coupon: ")
 		   .append(coupon)
 		   .append("\n")
 		   .append(cart);

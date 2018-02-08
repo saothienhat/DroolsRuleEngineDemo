@@ -1,4 +1,4 @@
-package com.javacodegeeks.drools.model;
+package com.saothienhat.drools.model;
 
 public class Product {
 	private int price;
@@ -18,6 +18,6 @@ public class Product {
 	}
 	
 	public String toString() {
-		return "product: " + desc + ", price: " + price;
+		return "	product: " + desc + ", price: " + price;
 	}
 }

@@ -1,4 +1,4 @@
-package com.javacodegeeks.drools.model;
+package com.saothienhat.drools.model;
 
 public class CartItem {
 	private Cart cart;

@@ -1,4 +1,4 @@
-package com.javacodegeeks.drools.model;
+package com.saothienhat.drools.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,11 +55,11 @@ public class Cart {
 			sb.append(cartItem)
 			  .append("\n");
 		}
-		sb.append("Discount: ")
+		sb.append("	Discount: ")
 		  .append(getDiscount())
-		  .append("\nTotal: ")
+		  .append("\n	Total: ")
 		  .append(getTotalPrice())
-		  .append("\nTotal After Discount: ")
+		  .append("\n	Total After Discount: ")
 		  .append(getFinalPrice());
 		return sb.toString();
 	}

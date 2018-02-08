@@ -10,8 +10,8 @@ import org.kie.internal.builder.KnowledgeBuilderFactory;
 import org.kie.internal.io.ResourceFactory;
 import org.kie.internal.runtime.StatelessKnowledgeSession;
 
-import com.javacodegeeks.drools.model.Customer;
-import com.javacodegeeks.drools.model.Product;
+import com.saothienhat.drools.model.Customer;
+import com.saothienhat.drools.model.Product;
 
 public class DroolsDecisionTableExample {
 	private static StatelessKnowledgeSession session;
@@ -31,16 +31,15 @@ public class DroolsDecisionTableExample {
 
 		session.execute(customer);
 
-		System.out.println("First Customer\n" + customer);
+		System.out.println("** First Customer:\n" + customer);
 
 		Customer newCustomer = Customer.newCustomer();
 		newCustomer.addItem(p1, 1);
 		newCustomer.addItem(p2, 2);
-		
-		session.execute(newCustomer);
 
-		System.out.println("*********************************");
-		System.out.println("Second Customer\n" + customer);
+		System.out.println("-----------------------------------------------------");
+		session.execute(newCustomer);
+		System.out.println("** Second Customer:\n" + customer);
 	}
 
 	private static KnowledgeBase createKnowledgeBaseFromSpreadsheet()
